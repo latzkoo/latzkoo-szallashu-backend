@@ -1,0 +1,294 @@
+{
+	"info": {
+		"_postman_id": "1e541320-dd57-4e26-bef4-c2d7705dda0e",
+		"name": "Company",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6433744"
+	},
+	"item": [
+		{
+			"name": "getCompaniesByDays",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://szallashu-backend.test/api/companies/foundations",
+					"protocol": "http",
+					"host": [
+						"szallashu-backend",
+						"test"
+					],
+					"path": [
+						"api",
+						"companies",
+						"foundations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCompaniesByActivities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://szallashu-backend.test/api/companies/activities",
+					"protocol": "http",
+					"host": [
+						"szallashu-backend",
+						"test"
+					],
+					"path": [
+						"api",
+						"companies",
+						"activities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCompaniesByIds",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id[]",
+							"value": "98",
+							"type": "text"
+						},
+						{
+							"key": "id[]",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://szallashu-backend.test/api/companies/get",
+					"protocol": "http",
+					"host": [
+						"szallashu-backend",
+						"test"
+					],
+					"path": [
+						"api",
+						"companies",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addCompany",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "companyName",
+							"value": "Teszt Company",
+							"type": "text"
+						},
+						{
+							"key": "companyRegistrationNumber",
+							"value": "659366-9851",
+							"type": "text"
+						},
+						{
+							"key": "companyFoundationDate",
+							"value": "1990-12-31",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "Hungary2",
+							"type": "text"
+						},
+						{
+							"key": "zipCode",
+							"value": "1037",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Budapest",
+							"type": "text"
+						},
+						{
+							"key": "streetAddress",
+							"value": "Bécsi út 314.",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "10.2132544",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "-12.567864",
+							"type": "text"
+						},
+						{
+							"key": "companyOwner",
+							"value": "Tóth Szabolcs",
+							"type": "text"
+						},
+						{
+							"key": "employees",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "activity",
+							"value": "IT",
+							"type": "text"
+						},
+						{
+							"key": "active",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "latzkoo32@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678aaaa",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://szallashu-backend.test/api/companies",
+					"protocol": "http",
+					"host": [
+						"szallashu-backend",
+						"test"
+					],
+					"path": [
+						"api",
+						"companies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCompany",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "companyName",
+							"value": "Teszt Company",
+							"type": "text"
+						},
+						{
+							"key": "companyRegistrationNumber",
+							"value": "659366-9860",
+							"type": "text"
+						},
+						{
+							"key": "companyFoundationDate",
+							"value": "1990-12-31",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "Hungary",
+							"type": "text"
+						},
+						{
+							"key": "zipCode",
+							"value": "1037",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Budapest",
+							"type": "text"
+						},
+						{
+							"key": "streetAddress",
+							"value": "Bécsi út 314.",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "10.2132544",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "-12.567864",
+							"type": "text"
+						},
+						{
+							"key": "companyOwner",
+							"value": "Tóth Szabolcs",
+							"type": "text"
+						},
+						{
+							"key": "employees",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "activity",
+							"value": "IT",
+							"type": "text"
+						},
+						{
+							"key": "active",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "latzkoo1@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678aaaa",
+							"type": "text"
+						},
+						{
+							"key": "registerAt",
+							"value": "2001-01-01 00:00:01",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://szallashu-backend.test/api/companies/101",
+					"protocol": "http",
+					"host": [
+						"szallashu-backend",
+						"test"
+					],
+					"path": [
+						"api",
+						"companies",
+						"101"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
